@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+header {
+    background-color: #004080;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+main {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.forms-Group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.forms-Group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.forms-Group input,
+.forms-Group select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.btn-SkillSub {
+    background-color: #004080;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btn-SkillSub:hover {
+    background-color: #0066cc;
+}
+
+#listaHabilidades {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#areaFeedback {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px dashed #ccc;
+    border-radius: 4px;
+    min-height: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #eee;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
