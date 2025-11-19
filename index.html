@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição FutureSkills</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Inscrição FutureSkills</h1>
+        <p>Formulário de cadastro para participação na plataforma sobre o Futuro do Trabalho.</p>
+    </header>
+
+    <main>
+
+        <section id="formSection">
+            <form id="formInscricao">
+                
+                <!-- name -->
+                <div class="forms-Group">
+                    <label for="inputNome">Nome Completo:</label>
+                    <input type="text" id="inputNome" name="nome" required>
+                </div>
+
+                <!-- CPF -->
+                <div class="forms-Group">
+                    <label for="inputCPF">CPF:</label>
+                    <input type="text" id="inputCPF" name="cpf" required>
+                </div>
+
+                <!-- e-mail -->
+                <div class="forms-Group">
+                    <label for="inputEmail">E-mail:</label>
+                    <input type="text" id="inputEmail" name="email" required>
+                </div>
+
+                <!-- skillList -->
+                <div class="forms-Group">
+                    <label for="selectHabilidade">Selecione uma Habilidade:</label>
+                    <select id="selectHabilidade" name="habilidade">
+                        <option value="">Escolha uma habilidade</option>
+                        <option value="programacao">Programação</option>
+                        <option value="design">Design</option>
+                        <option value="gestao">Gestão de Projetos</option>
+                        <option value="comunicacao">Comunicação</option>
+                        <option value="ia">Inteligência Artificial</option>
+                    </select>
+                </div>
+
+                <!-- typeInterest -->
+                <div class="forms-Group">
+                    <label for="selectInteresse">Tipo de Interesse:</label>
+                    <select id="selectInteresse" name="interesse">
+                        <option value="">Escolha um interesse</option>
+                        <option value="remoto">Trabalho Remoto</option>
+                        <option value="ia">Inteligência Artificial</option>
+                        <option value="sustentabilidade">Sustentabilidade</option>
+                        <option value="upskilling">Upskilling</option>
+                    </select>
+                </div>
+
+                <!-- btnAddSkills -->
+                <div class="forms-Group">
+                    <button class="btn-SkillSub" type="button" id="btnAdicionarHabilidade">Adicionar Habilidade</button>
+                </div>
+
+                <!-- listSkillsAdds -->
+                <div class="forms-Group">
+                    <label>Habilidades Adicionadas:</label>
+                    <ul id="listaHabilidades">
+                        <!--showAddSkills-->
+                    </ul>
+                </div>
+
+                <!-- btnSubmision -->
+                <div class="forms-Group">
+                    <button class="btn-SkillSub" type="submit" id="btnEnviar">Enviar Inscrição</button>
+                </div>
+
+                <!-- areaFeedback -->
+                <div class="forms-Group">
+                    <label>Feedback:</label>
+                    <div id="areaFeedback"></div>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Global Solution – FIAP 2025 | Web Development</p>
+    </footer>
+    
+</body>
+</html>
