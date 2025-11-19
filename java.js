@@ -12,6 +12,13 @@ function adicionarHabilidade() {
         return;
     }
 
+    for (let i = 0; i < habilidades.length; i++) {
+        if (habilidades[i] === select.value) {
+            alert("Essa habilidade já foi adicionada.");
+            return;
+        }
+    }
+
     if (habilidades.length >= 5) {
         alert("Limite de 5 habilidades atingido!");
         return;
@@ -48,10 +55,15 @@ function exibirFeedback(erros) {
         fb.innerHTML += erros.map(e => `• ${e}`).join("<br>");
     } else {
         fb.style.background = "#ddffdd";
+
+        var emailExibido = document.getElementById("inputEmail").value;
+        emailExibido = emailExibido.toLowerCase();
+
         fb.innerHTML = `
             <h3>Inscrição enviada com sucesso!</h3>
             <p><strong>Nome:</strong> ${document.getElementById("inputNome").value}</p>
-            <p><strong>E-mail:</strong> ${document.getElementById("inputEmail").value}</p>
+            <p><strong>CPF:</strong> ${document.getElementById("inputCPF").value}</p>
+            <p><strong>E-mail:</strong> ${emailExibido}</p>
             <p><strong>Habilidades:</strong> ${habilidades.join(", ")}</p>
             <p><strong>Interesse:</strong> ${document.getElementById("selectInteresse").value}</p>
         `;
@@ -68,7 +80,7 @@ function validarFormulario(evento) {
     const nome = document.getElementById("inputNome").value.trim();
     const cpf = document.getElementById("inputCPF").value.trim();
     const email = document.getElementById("inputEmail").value.trim();
-
+    var interesse = document.getElementById("selectInteresse").value;
 //validações
     if (nome.length < 5) {
         erros.push("O nome deve ter pelo menos 5 caracteres.");
@@ -86,8 +98,35 @@ function validarFormulario(evento) {
         erros.push("Adicione pelo menos 3 habilidades.");
     }
 
+    if (interesse == "") {
+        erros.push("Selecione um tipo de interesse.")
+    }
+
     exibirFeedback(erros);
 }
+
+//limpar formulário
+function limparFormulario() {
+    // limpa campos de texto
+    document.getElementById("inputNome").value = "";
+    document.getElementById("inputCPF").value = "";
+    document.getElementById("inputEmail").value = "";
+
+    // limpa selects
+    document.getElementById("selectHabilidade").value = "";
+    document.getElementById("selectInteresse").value = "";
+
+    // limpa feedback
+    document.getElementById("areaFeedback").innerHTML = "";
+    document.getElementById("areaFeedback").style.background = "transparent";
+
+    // limpa vetor de habilidades
+    habilidades = [];
+
+    // limpa ul visual
+    document.getElementById("listaHabilidades").innerHTML = "";
+}
+
 
 //eventos
 
@@ -96,3 +135,6 @@ document.getElementById("btnAdicionarHabilidade")
 
 document.getElementById("formInscricao")
     .addEventListener("submit", validarFormulario);
+
+document.getElementById("btnLimpar")
+    .addEventListener("click", limparFormulario);
