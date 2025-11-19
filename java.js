@@ -81,7 +81,27 @@ function validarFormulario(evento) {
     const cpf = document.getElementById("inputCPF").value.trim();
     const email = document.getElementById("inputEmail").value.trim();
     var interesse = document.getElementById("selectInteresse").value;
+    var nomeValido = true;
+    
 //validações
+    for (var i = 0; i < nome.length; i++) {
+        var ch = nome[i];
+
+        // aceita espaço
+        if (ch === " ") continue;
+
+        // aceita letra (funciona inclusive com acentos)
+        if (ch.toUpperCase() !== ch.toLowerCase()) continue;
+
+        // qualquer outra coisa = inválido
+        nomeValido = false;
+        break;
+    }
+
+    if (!nomeValido) {
+        erros.push("O nome só pode conter letras e espaços.");
+    }
+
     if (nome.length < 5) {
         erros.push("O nome deve ter pelo menos 5 caracteres.");
     }
