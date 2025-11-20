@@ -14,7 +14,7 @@ Apresentado ao curso de Engenharia de Software. <hr>
   <ul>
     <b><li>index.html</b> - Estrutura básica da página web e do formulário de inscrição, com elementos acessíveis via id para o JavaScript.</li>
     <b><li>java.js</b> - Script com as funções JavaScript puro (vanilla) para validação do formulário, manipulação de dados e interação com o DOM.</li>
-    <b><li>style.css</b> - ...</li>
+    <b><li>style.css</b> - Desenvolvimento de estilização com css básico meramente estético.</li>
     <li>README.md</li>
   </ul>
 </ul>
@@ -41,7 +41,7 @@ O objetivo principal é demonstrar a implementação dos seguintes conceitos obr
 
 <h3>Publicação:</h3> <p>
 O projeto foi publicado no GitHub Pages para visualização online. <br>
-🔗 Link GitHub-Pages: ...
+🔗 Link GitHub-Pages: https://yurifukamachi07-beep.github.io/GS-WebDevelopment/
 </p>
 
 
