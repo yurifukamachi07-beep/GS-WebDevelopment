@@ -1,5 +1,5 @@
 # GS-WebDevelopment
-Global Solution desenvolvida por Cainã Sandes Batista, RM: 568571; Kenzo Hiro, RM: 568158; Yuri Aroste, RM: 567314  <br>
+Global Solution desenvolvida por Cainã Sandes Batista, RM: 568571; Kenzo Hiro, RM: 568158; Yuri Aroste, RM: 567314.  <br>
 Apresentado ao curso de Engenharia de Software. <hr>
 
 <h3>Nome do Projeto:</h3> 
@@ -37,6 +37,66 @@ O objetivo principal é demonstrar a implementação dos seguintes conceitos obr
     <li>Acesso e modificação de elementos DOM usando document.getElementById() para leitura de dados e exibição de feedback.</li>
 </ul>
 <p>
+
+<h3>Requisitos do formulário</h3>
+
+Campos obrigatórios: <ul>
+  <li>Nome Completo;</li>
+  <li>CPF;</li>
+  <li>E-mail;</li>
+  <li>Tipo de interesse;</li>
+  <li>Habilidades (mínimo 3 e máximo de 5 adicionadas).</li>
+</ul>
+
+Botões: <ul>
+  <li>Adicionar habilidade;</li>
+  <li>Enviar inscrição;</li>
+  <li>Limpar formulário.</li>
+</ul>
+
+Áreas: <ul>
+  <li>Lista de habilidades adicionadas;</li>
+  <li>Área de feedback.</li>
+</ul>
+
+<h3>Requisitos de JavaScript</h3>
+
+Funções utilizadas: <ul>
+  <li><code>adicionarHabilidade()</code></li>
+  <li><code>validarFormulario()</code></li>
+  <li><code>checarEmail()</code></li>
+  <li><code>checarCPF()</code></li>
+  <li><code>exibirFeedback()</code></li>
+  <li><code>limparFormulario()</code></li>
+</ul>
+
+Vetores: <ul>
+  <li><code>habilidades[]</code> - armazena as skills adicionadas;</li>
+  <li><code>erros[]</code> - reúne as mensagens de validação.</li>
+</ul>
+
+Manipulação de strings: <ul>
+  <li><code>toLowerCase()</code> - conversão de ".COM";</li>
+  <li>Limpeza de caracterez não numéricos no "CPF";</li>
+  <li>Validação de caracteres permitidos no "Nome";</li>
+</ul>
+
+Manipulação do DOM: <ul>
+  <li><code>document.getElementById().value</code> - leitura de inputs;</li>
+  <li><code><ul></code> - atualização dinâmica da lista;</li>
+  <li><code>innerHTML</code> - exibição de erros e sucesso na inscrição.</li>
+</ul>
+
+<h3>Como executar</h3>
+<ul>
+  <li>Abra e execute o arquivo index.html ou acesse nosso GitHub pages do projeto. </li>
+  <li>Preencha os campos obrigatórios.  </li>
+  <li>Adicione pelo menos 3 habilidades.</li>
+  <li>Clique em "Enviar Inscrição" para visualizar o feedback.</li>
+  <li>Utilize o botão "Limpar Formulário" para recomeçar.</li>
+</ul>
+
+Nenhuma dependência ou servidor é necessário.
 
 <h3>Publicação:</h3> <p>
 O projeto foi publicado no GitHub Pages para visualização online. <br>
