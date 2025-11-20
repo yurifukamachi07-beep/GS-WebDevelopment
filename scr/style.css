@@ -63,6 +63,17 @@ main {
     background-color: #0066cc;
 }
 
+.btn-Clear {
+    background-color: #fc0000;
+    color: #ffffff;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+
 #listaHabilidades {
     list-style-type: disc;
     padding-left: 20px;
