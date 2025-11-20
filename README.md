@@ -78,21 +78,21 @@ Vetores: <ul>
 Manipulação de strings: <ul>
   <li><code>toLowerCase()</code> - conversão de ".COM";</li>
   <li>Limpeza de caracterez não numéricos no "CPF";</li>
-  <li>Validação de caracteres permitidos no "Nome";</li>
+  <li>Validação de caracteres permitidos no "Nome".</li>
 </ul>
 
 Manipulação do DOM: <ul>
   <li><code>document.getElementById().value</code> - leitura de inputs;</li>
-  <li><code><ul></code> - atualização dinâmica da lista;</li>
+  <li><code>ul</code> - atualização dinâmica da lista;</li>
   <li><code>innerHTML</code> - exibição de erros e sucesso na inscrição.</li>
 </ul>
 
 <h3>Como executar</h3>
 <ul>
-  <li>Abra e execute o arquivo index.html ou acesse nosso GitHub pages do projeto. </li>
-  <li>Preencha os campos obrigatórios.  </li>
-  <li>Adicione pelo menos 3 habilidades.</li>
-  <li>Clique em "Enviar Inscrição" para visualizar o feedback.</li>
+  <li>Abra e execute o arquivo index.html ou acesse nosso GitHub pages do projeto;</li>
+  <li>Preencha os campos obrigatórios;</li>
+  <li>Adicione pelo menos 3 habilidades;</li>
+  <li>Clique em "Enviar Inscrição" para visualizar o feedback;</li>
   <li>Utilize o botão "Limpar Formulário" para recomeçar.</li>
 </ul>
 
