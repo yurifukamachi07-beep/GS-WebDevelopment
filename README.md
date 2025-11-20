@@ -1,5 +1,5 @@
 # GS-WebDevelopment
-Global Solution desenvolvida por Cainã Sandes Batista, RM: 568571; Kenzo Hiro, RM: ...; Yuri Aroste, RM: 567314  <br>
+Global Solution desenvolvida por Cainã Sandes Batista, RM: 568571; Kenzo Hiro, RM: 568158; Yuri Aroste, RM: 567314  <br>
 Apresentado ao curso de Engenharia de Software. <hr>
 
 <h3>Nome do Projeto:</h3> 
@@ -37,7 +37,6 @@ O objetivo principal é demonstrar a implementação dos seguintes conceitos obr
     <li>Acesso e modificação de elementos DOM usando document.getElementById() para leitura de dados e exibição de feedback.</li>
 </ul>
 <p>
-
 
 <h3>Publicação:</h3> <p>
 O projeto foi publicado no GitHub Pages para visualização online. <br>
