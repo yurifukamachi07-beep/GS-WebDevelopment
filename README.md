@@ -1,5 +1,5 @@
 # GS-WebDevelopment
-Global Solution desenvolvida por Cainã Sandes Batista, RM: 568571; Kenzo Hiro, RM: ...; Yuri Aroste, RM: ....  <br>
+Global Solution desenvolvida por Cainã Sandes Batista, RM: 568571; Kenzo Hiro, RM: ...; Yuri Aroste, RM: 567314  <br>
 Apresentado ao curso de Engenharia de Software. <hr>
 
 <h3>Nome do Projeto:</h3> 
